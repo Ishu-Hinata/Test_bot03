@@ -13,9 +13,9 @@ def PermissionCheck(mystic):
                 "I need to be admin with some permissions:\n"
                 + "\n- **can_manage_voice_chats:** To manage voice chats"
                 + "\n- **can_delete_messages:** To delete Bot's Searched Waste"
-                + "\n- **can_invite_users**: For inviting assistant to chat."
+                + "\n- **can_invite_users**: For inviting assistant to chat.")
                 await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABHz_tYnz-KhmcOXLNVXdTD_bwR7vd5q4AAtMBAAKcg-hHW5ettUjivtEkBA")
-            )
+            
         if not a.can_manage_voice_chats:
             await message.reply_text(
                 "I don't have the Fackin permission to perform this action....Just give Admin rights alredy (ノ｀Д´)"
