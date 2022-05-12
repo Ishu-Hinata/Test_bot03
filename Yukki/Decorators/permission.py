@@ -34,7 +34,6 @@ def PermissionCheck(mystic):
             
             return
         if not a.can_invite_users:
-           
     await message.reply_text(
                 "I don't have the Fackin required permission to Invite my Music Assistant. ( ･ั﹏･ั)"
                 + "\n**Permission:** __INVITE USERS VIA LINK__"
