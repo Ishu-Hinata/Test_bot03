@@ -19,23 +19,23 @@ def PermissionCheck(mystic):
         if not a.can_manage_voice_chats:
             await message.reply_text(
                 "I don't have the Fackin permission to perform this action....Just give Admin rights alredy (ノ｀Д´)"
-                + "\n**Permission:** __MANAGE VOICE CHATS__"
+                + "\n**Permission:** __MANAGE VOICE CHATS__")
                 await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH0AVYn0Eqd5JjWyglYJ_hTnIunT3sXEAAk0DAAITxulHgwa4nEH6gUQkBA")
-            )
+            
             return
         if not a.can_delete_messages:
             await message.reply_text(
                 "I don't have the Fackin required permission to perform this action...Give right (>.<)"
-                + "\n**Permission:** __DELETE MESSAGES__"
+                + "\n**Permission:** __DELETE MESSAGES__")
                 await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH0AfYn0FjFN6TQqP4RjZ6z4ibe7bI_MAApICAAKYSOlHvd1h3OfYxA4kBA")
-            )
+            
             return
         if not a.can_invite_users:
             await message.reply_text(
                 "I don't have the Fackin required permission to Invite my Music Assistant. ( ･ั﹏･ั)"
-                + "\n**Permission:** __INVITE USERS VIA LINK__"
+                + "\n**Permission:** __INVITE USERS VIA LINK__")
                 await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH0AkYn0GCihMa8Sgmk5xJ1SThPDbR_0AAooCAAJ-5-FHsLJ4QxovBbgkBA")
-            )
+            
             return
         return await mystic(_, message)
 
