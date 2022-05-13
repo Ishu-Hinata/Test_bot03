@@ -110,14 +110,14 @@ async def boom(_, CallbackQuery):
         fetched = f"""
 **Downloaded !**
 
-┏━━━━━━━𖣘❘༻🎴❛☉❟🎴༺❘𖣘━━━━━━━┓
-┃ 🖥️**Title:** {title}
+┏━━━━━❘༻🎴❛☉❟🎴༺❘━━━━━┓
+┃ 🖥️**𝙏𝙞𝙩𝙡𝙚⌲** {title}
 ┃
-┃  ╔ **Duration:** {duration} Mins
-┃  ╠**Views:** `{views}`
-┃  ╚**Channel Name:** {channel}
+┃  ╔**𝘿𝙪𝙧𝙖𝙩𝙞𝙤𝙣⇨** {duration} Mins
+┃  ╠**𝙑𝙞𝙚𝙬𝙨⇨** `{views}`
+┃  ╚**𝘾𝙝𝙖𝙣𝙣𝙚𝙡⇨** {channel}
 ┃
-┗━━━━━━━𖣘❘༻🩸❛☉❟🩸༺❘𖣘━━━━━━━┛
+┗━━━━━𖣘❘༻❛☉❟༺❘𖣘━━━━━┛
 
 ⚡📡 __Youtube Inline Download Powered By {MUSIC_BOT_NAME}__"""
     filext = "%(title)s.%(ext)s"
@@ -225,7 +225,7 @@ async def boom(_, CallbackQuery):
 
 def p_mark(link, channel):
     buttons = [
-        [InlineKeyboardButton(text="Watch on Youtube", url=f"{link}")],
+        [InlineKeyboardButton(text="🖥️Watch on Youtube🖥️", url=f"{link}")],
     ]
     return buttons
 
