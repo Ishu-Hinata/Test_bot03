@@ -72,6 +72,7 @@ async def admins(_, message: Message):
         await message.reply_text(
             f"🎧 Voicechat Paused by {message.from_user.mention}!"
         )
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1zWYn5hjqqezmi6KebEayQFICxNK30AAi8CAAL_DuhHCeTRkFu60vAkBA")
     if message.command[0][1] == "e":
         if await is_music_playing(message.chat.id):
             return await message.reply_text("Already Playing music bish")
