@@ -37,7 +37,7 @@ async def assis_change(_, message: Message):
     await message.reply_text(
         f"**Changed Assistant**\n\nChanged Assistant Account from **{ass}** to Assistant Number **{ass_num}**"
     )
-
+    return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1vQYn5cvjbO6m-l1ud1fUFr0FFOufEAAooCAAJ-5-FHsLJ4QxovBbgkBA")
 
 ass_num_list2 = ["1", "2", "3", "4", "5", "Random"]
 
