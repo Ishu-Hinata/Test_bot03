@@ -33,9 +33,9 @@ async def auth(_, message: Message):
     if not message.reply_to_message:
         if len(message.command) != 2:
             await message.reply_text(
-                "Reply to a user's message or give username/user_id... haha fakin idiot UwU "
+                "UwU Reply to a user's message or give username/user_id.💕 "
             )
-            return await app.send_sticker(message.chat.id,"CAACAgUAAx0Cak5fVgABBiutYnzuLoHovOpsydapxzdpeGPn4kEAAqcFAALvw7lUqFiXebelCpskBA")
+            return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1pkYn5Skh3uf5x-73aa-Ydql-zbEsYAAm8DAAJAi-lHqOuwv2gb3qwkBA")
         user = message.text.split(None, 1)[1]
         if "@" in user:
             user = user.replace("@", "")
