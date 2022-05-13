@@ -104,10 +104,10 @@ async def admins(_, message: Message):
             await remove_active_chat(chat_id)
             await remove_active_video_chat(chat_id)
             await message.reply_text(
-                "No more music in __Queue__ (ノ｀Д´)ノ彡┻━┻ \n\nAssistant leave the fakin Voice Chat (ಠ_ಠ)>⌐■-■ "
+                "No more music in __Queue__ \n\nAssistant leave the Voice Chat "
             )
             await stop_stream(chat_id)
-            return
+            return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1wjYn5eLjI8YcSJsiC_Z8WxaR3I0LEAAmACAAIMgulHSExTaqojqSkkBA")
         else:
             videoid = Queues.get(chat_id)["file"]
             got_queue = get_queue.get(chat_id)
