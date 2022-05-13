@@ -115,6 +115,7 @@ async def whitelist_chat_func(_, message: Message):
             return await message.reply_text(
                 f"Removed from Authorised Users List of this Group."
             )
+            return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1riYn5WX0Pr6pMSTLmKuXnodY1725oAAm8DAAJAi-lHqOuwv2gb3qwkBA")
         else:
             return await message.reply_text(f"Not an Authorised User.")
     user_id = message.reply_to_message.from_user.id
