@@ -72,7 +72,7 @@ async def admins(_, message: Message):
         await message.reply_text(
             f"🎧 Voicechat Paused by {message.from_user.mention}!"
         )
-        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1zWYn5hjqqezmi6KebEayQFICxNK30AAi8CAAL_DuhHCeTRkFu60vAkBA")
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH11YYn5kH6bWt9rw-XbU5JQz9oWhPvwAAooCAAJ-5-FHsLJ4QxovBbgkBA")
     if message.command[0][1] == "e":
         if await is_music_playing(message.chat.id):
             return await message.reply_text("Already Playing music bish")
@@ -81,6 +81,7 @@ async def admins(_, message: Message):
         await message.reply_text(
             f"🎧 Voicechat Resumed by {message.from_user.mention}!"
         )
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH11xYn5kpFXomtP55ovaxrzyVhFwsgoAAnsCAAK3HulHwvpNx637Yw4kBA")
     if message.command[0][1] == "t" or message.command[0][1] == "n":
         if message.chat.id not in db_mem:
             db_mem[message.chat.id] = {}
@@ -96,6 +97,7 @@ async def admins(_, message: Message):
         await message.reply_text(
             f"🎧 Voicechat End/Stopped by {message.from_user.mention}!"
         )
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH12EYn5lA9DtU90mQ2LL-2qRBjdSPP0AAk0DAAITxulHgwa4nEH6gUQkBA")
     if message.command[0][1] == "k":
         if message.chat.id not in db_mem:
             db_mem[message.chat.id] = {}
@@ -164,7 +166,7 @@ async def admins(_, message: Message):
                 )
             elif str(finxx) == "s1s":
                 mystic = await message.reply_text(
-                    "Skipped retarded video... Moving to the good part.(⌐■-■)"
+                    "Skipped video... Moving to the good part.(⌐■-■)"
                 )
                 afk = videoid
                 read = (str(videoid)).replace("s1s_", "", 1)
