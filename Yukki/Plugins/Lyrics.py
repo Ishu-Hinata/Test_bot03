@@ -27,9 +27,10 @@ async def lyricssex(_, CallbackQuery):
     try:
         id, user_id = callback_request.split("|")
     except Exception as e:
-        return await CallbackQuery.message.edit(
+        await CallbackQuery.message.edit(
             f"Error Occured\n**Possible reason could be**:{e}"
         )
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH15VYn504DePgj3jctiQYfMrijZ3y7gAAugBAAKvuehHroFJDcriobEkBA")
     url = f"https://www.youtube.com/watch?v={id}"
     print(url)
     try:
@@ -37,18 +38,20 @@ async def lyricssex(_, CallbackQuery):
         for result in results.result()["result"]:
             title = result["title"]
     except Exception as e:
-        return await CallbackQuery.answer(
+        await CallbackQuery.answer(
             "Sound not found. Youtube issues.", show_alert=True
         )
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH15VYn504DePgj3jctiQYfMrijZ3y7gAAugBAAKvuehHroFJDcriobEkBA")
     x = "OXaVabSRKQLqwpiYOn-E4Y7k3wj-TNdL5RfDPXlnXhCErbcqVvdCF-WnMR5TBctI"
     y = lyricsgenius.Genius(x)
     t = re.sub(r"[^\w]", " ", title)
     y.verbose = False
     S = y.search_song(t, get_full_info=False)
     if S is None:
-        return await CallbackQuery.answer(
+        await CallbackQuery.answer(
             "Lyrics not found :p", show_alert=True
         )
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH15VYn504DePgj3jctiQYfMrijZ3y7gAAugBAAKvuehHroFJDcriobEkBA")
     await CallbackQuery.message.delete()
     userid = CallbackQuery.from_user.id
     usr = f"[{CallbackQuery.from_user.first_name}](tg://user?id={userid})"
