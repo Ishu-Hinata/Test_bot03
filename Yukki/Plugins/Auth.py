@@ -89,9 +89,9 @@ async def auth(_, message: Message):
         }
         await save_authuser(message.chat.id, token, assis)
         await message.reply_text(
-            f"Added to Authorised Users List of this group."
+            f"Added to Authorised Users List of this group.💕"
         )
-        return
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1p2Yn5TGQhr7OnKJXB598bl-YPT5Y8AAg4CAAKS5elH55W7TSAEMLokBA")
     else:
         await message.reply_text(f"Already in the Authorised Users List.ಠ◡ಠ chutiya ?")
 
