@@ -110,12 +110,14 @@ async def boom(_, CallbackQuery):
         fetched = f"""
 **Downloaded !**
 
-🖥️**Title:** {title}
-
-╔ **Duration:** {duration} Mins
-╠**Views:** `{views}`
-╚**Channel Name:** {channel}
-
+┏━━━━━━━𖣘❘༻🎴❛☉❟🎴༺❘𖣘━━━━━━━┓
+┃ 🖥️**Title:** {title}
+┃
+┃  ╔ **Duration:** {duration} Mins
+┃  ╠**Views:** `{views}`
+┃  ╚**Channel Name:** {channel}
+┃
+┗━━━━━━━𖣘❘༻🩸❛☉❟🩸༺❘𖣘━━━━━━━┛
 
 ⚡📡 __Youtube Inline Download Powered By {MUSIC_BOT_NAME}__"""
     filext = "%(title)s.%(ext)s"
