@@ -73,6 +73,7 @@ async def lyricssex(_, CallbackQuery):
             caption=f"**OUTPUT:**\n\n`Lyrics`",
             quote=False,
         )
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH15VYn504DePgj3jctiQYfMrijZ3y7gAAugBAAKvuehHroFJDcriobEkBA")
         os.remove(filename)
     else:
         await CallbackQuery.message.reply_text(xxx)
@@ -110,6 +111,7 @@ async def lrsearch(_, message: Message):
             caption=f"**OUTPUT:**\n\n`Lyrics`",
             quote=False,
         )
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH15VYn504DePgj3jctiQYfMrijZ3y7gAAugBAAKvuehHroFJDcriobEkBA")
         os.remove(filename)
     else:
         await m.edit(xxx)
