@@ -88,6 +88,7 @@ async def lrsearch(_, message: Message):
     if len(message.command) < 2:
         return await message.reply_text("**Usage:**\n\n/lyrics [ Music Name]")
     m = await message.reply_text("Searching Lyrics")
+    return await message.reply_photo(photo="https://telegra.ph/file/1e4adde1013173fc6dedb.jpg")
     query = message.text.split(None, 1)[1]
     x = "OXaVabSRKQLqwpiYOn-E4Y7k3wj-TNdL5RfDPXlnXhCErbcqVvdCF-WnMR5TBctI"
     y = lyricsgenius.Genius(x)
