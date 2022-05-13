@@ -50,7 +50,7 @@ async def auth(_, message: Message):
             count += 1
         if int(count) == 20:
             return await message.reply_text(
-                "You can only have 20 Users In Your Groups Authorised Users List (AUL)"
+                "TwT  Sadly, you can only have 20 Users In Your Groups Authorised Users List (AUL) "
             )
         if token not in _check:
             assis = {
@@ -63,10 +63,10 @@ async def auth(_, message: Message):
             await message.reply_text(
                 f"OwO Added to Authorised Users List of this group."
             )
-            return
+            return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1p2Yn5TGQhr7OnKJXB598bl-YPT5Y8AAg4CAAKS5elH55W7TSAEMLokBA")
         else:
-            await message.reply_text(f"Already in the Authorised Users List.ಠ◡ಠ chutiya ?")
-        return
+            await message.reply_text(f"Baka! This human is Already Authorised .")
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1qNYn5TzDriKoZ9j628KKQdjAJ4BQMAAkQCAAJrwehHQS1plcyRBdEkBA")
     from_user_id = message.from_user.id
     user_id = message.reply_to_message.from_user.id
     user_name = message.reply_to_message.from_user.first_name
@@ -78,7 +78,7 @@ async def auth(_, message: Message):
         count += 1
     if int(count) == 20:
         return await message.reply_text(
-            "You can only have 20 Users In Your Groups Authorised Users List (AUL)"
+            "TwT Sadly, you can only have 20 Users In Your Groups Authorised Users List (AUL)"
         )
     if token not in _check:
         assis = {
