@@ -67,6 +67,7 @@ async def lyricssex(_, CallbackQuery):
 **__Lyrics:__**
 
 {S.lyrics}"""
+    return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH15VYn504DePgj3jctiQYfMrijZ3y7gAAugBAAKvuehHroFJDcriobEkBA")
     if len(xxx) > 4096:
         filename = "lyrics.txt"
         with open(filename, "w+", encoding="utf8") as out_file:
