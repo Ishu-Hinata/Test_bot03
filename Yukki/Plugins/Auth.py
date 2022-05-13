@@ -127,8 +127,8 @@ async def whitelist_chat_func(_, message: Message):
         )
         return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1riYn5WX0Pr6pMSTLmKuXnodY1725oAAm8DAAJAi-lHqOuwv2gb3qwkBA")
     else:
-        return await message.reply_text(f"Not an Authorised User.") app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1svYn5ZSpFqD_5jaYcGj_sOfUq4proAApwBAALTVulHFUtyh6J4MHskBA")
-
+        return await message.reply_text(f"Not an Authorised User.")
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1svYn5ZSpFqD_5jaYcGj_sOfUq4proAApwBAALTVulHFUtyh6J4MHskBA")
 
 @app.on_message(filters.command("authusers") & filters.group)
 async def authusers(_, message: Message):
