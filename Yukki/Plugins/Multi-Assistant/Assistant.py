@@ -47,10 +47,10 @@ async def awaiting_message(client, message):
     else:
         flood[str(user_id)] = 1
     if flood[str(user_id)] > 5:
-        await message.reply_text("💞")
+        await message.reply_text("Wait till i come online 💞 @Anime_Gaming_Chat_Global")
         await client.send_message(
             LOG_GROUP_ID,
-            f"**Spam Detect 🎋 @A_InviteLink 🎋 **\n\n- **Blocked User:** {message.from_user.mention}\n- **User ID:** {message.from_user.id}",
+            f"**Spam Detect 🎋 **\n\n- **Blocked User:** {message.from_user.mention}\n- **User ID:** {message.from_user.id}",
         )
         return await client.block_user(user_id)
     await message.reply_text(
