@@ -60,9 +60,9 @@ async def admins(_, message: Message):
         return await message.reply_text("Error! Wrong Usage of Command...hehe fakin noob.")
     if not await is_active_chat(message.chat.id):
         await message.reply_text(
-            "Nothing is playing on voice chat bruh -_- No Active Voice ¯\_(ツ)_/¯"
+            "Excuse me, but Nothing is playing on voice chat.... Baaka ;) "
         )
-        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1zWYn5hjqqezmi6KebEayQFICxNK30AAi8CAAL_DuhHCeTRkFu60vAkBA")
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH13SYn5m3ENG8LFpm5Rt_kICb1-nTGIAAlkCAAKcOelHgCDg93HtiYUkBA")
     chat_id = message.chat.id
     if message.command[0][1] == "a":
         if not await is_music_playing(message.chat.id):
