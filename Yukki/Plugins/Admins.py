@@ -62,6 +62,7 @@ async def admins(_, message: Message):
         return await message.reply_text(
             "Nothing is playing on voice chat bruh -_- No Active Voice ¯\_(ツ)_/¯"
         )
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1zWYn5hjqqezmi6KebEayQFICxNK30AAi8CAAL_DuhHCeTRkFu60vAkBA")
     chat_id = message.chat.id
     if message.command[0][1] == "a":
         if not await is_music_playing(message.chat.id):
@@ -104,7 +105,7 @@ async def admins(_, message: Message):
             await remove_active_chat(chat_id)
             await remove_active_video_chat(chat_id)
             await message.reply_text(
-                "No more music in __Queue__ \n\nAssistant leave the Voice Chat "
+                "No more music in __Queue__"
             )
             await stop_stream(chat_id)
             return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1wjYn5eLjI8YcSJsiC_Z8WxaR3I0LEAAmACAAIMgulHSExTaqojqSkkBA")
