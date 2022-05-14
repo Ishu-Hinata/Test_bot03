@@ -93,7 +93,7 @@ async def lrsearch(_, message: Message):
     x = "OXaVabSRKQLqwpiYOn-E4Y7k3wj-TNdL5RfDPXlnXhCErbcqVvdCF-WnMR5TBctI"
     y = lyricsgenius.Genius(x)
     y.verbose = False
-    await message.reply_photo(photo="Utils/Query.jpg", S = y.search_song(query, get_full_info=False
+    await message.reply_photo(photo="Utils/Query.jpg", S = y.search_song(query, get_full_info=False)
     )
     if S is None:
         await m.edit("Lyrics not found")
