@@ -89,7 +89,7 @@ async def lrsearch(_, message: Message):
         return await message.reply_text("**Usage:**\n\n/lyrics [ Music Name]")
     m = await message.reply_text("Searching Lyrics")
     query = message.text.split(None, 1)[1]
-    return await message.reply_photo(photo="https://telegra.ph/file/1e4adde1013173fc6dedb.jpg")
+
     x = "OXaVabSRKQLqwpiYOn-E4Y7k3wj-TNdL5RfDPXlnXhCErbcqVvdCF-WnMR5TBctI"
     y = lyricsgenius.Genius(x)
     y.verbose = False
