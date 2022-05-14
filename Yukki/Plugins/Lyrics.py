@@ -93,7 +93,7 @@ async def lrsearch(_, message: Message):
     x = "OXaVabSRKQLqwpiYOn-E4Y7k3wj-TNdL5RfDPXlnXhCErbcqVvdCF-WnMR5TBctI"
     y = lyricsgenius.Genius(x)
     y.verbose = False
-    await message.reply_photo(photo="Utils/Query.jpg")
+    await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAADVGJ_Eu6i7gY9OHofJXYzZG9vx9NJAAJ-AgACbjTpRyGloEDdvdAXJAQ")
     caption=S = y.search_song(query, get_full_info=False)
     
     if S is None:
