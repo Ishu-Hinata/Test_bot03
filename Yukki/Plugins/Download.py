@@ -117,8 +117,7 @@ async def boom(_, CallbackQuery):
 ┃  ╠**𝙑𝙞𝙚𝙬𝙨⇨** `{views}`
 ┃  ╚**𝘾𝙝𝙖𝙣𝙣𝙚𝙡⇨** {channel}
 ┃
-┗━━━
-━𖣘❘༻❛☉❟༺❘𖣘━━━┛
+┗━━━𖣘❘༻❛☉❟༺❘𖣘━━━┛
 
 ⚡📡 __Youtube Inline Download Powered By {MUSIC_BOT_NAME}__"""
     filext = "%(title)s.%(ext)s"
