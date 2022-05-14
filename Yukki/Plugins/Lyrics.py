@@ -87,18 +87,19 @@ async def lyricssex(_, CallbackQuery):
 async def lrsearch(_, message: Message):
     if len(message.command) < 2:
         return await message.reply_text("**Usage:**\n\n/lyrics [ Music Name]")
-    m = await message.reply_text("Searching Lyrics")
+    m = await message.reply_text("Matte matte-kudasai...")
     query = message.text.split(None, 1)[1]
 
     x = "OXaVabSRKQLqwpiYOn-E4Y7k3wj-TNdL5RfDPXlnXhCErbcqVvdCF-WnMR5TBctI"
     y = lyricsgenius.Genius(x)
     y.verbose = False
     S = y.search_song(query, get_full_info=False)
+    await message.reply_photo(photo="Utils/Query.jpg")
     if S is None:
         await m.edit("Lyrics not found")
         return await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAADJ2J--ZcDthxSuYHxU1b2RYO8Kg6EAALCAgACh77pR7xwL6V4JH51JAQ")
     xxx = f"""
-(thumb = "Utils/Playlist.jpg")
+
 **Lyrics Search Powered By {MUSIC_BOT_NAME}**
 
 **Searched Song:-** __{query}__
