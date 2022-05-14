@@ -51,7 +51,7 @@ async def lyricssex(_, CallbackQuery):
         await CallbackQuery.answer(
             "Lyrics not found :p", show_alert=True
         )
-        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH15VYn504DePgj3jctiQYfMrijZ3y7gAAugBAAKvuehHroFJDcriobEkBA")
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAADY2J_IMLji-mL3LSzeWT3UsvKhp1eAAKjAQAChF_oR4mPSwQeXkkTJAQ")
     await CallbackQuery.message.delete()
     userid = CallbackQuery.from_user.id
     usr = f"[{CallbackQuery.from_user.first_name}](tg://user?id={userid})"
