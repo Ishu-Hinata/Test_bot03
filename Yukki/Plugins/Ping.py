@@ -28,10 +28,14 @@ async def bot_sys_stats():
     mem = psutil.virtual_memory().percent
     disk = psutil.disk_usage("/").percent
     stats = f"""
-Uptime: {get_readable_time((bot_uptime))}
-CPU: {cpu}%
-RAM: {mem}%
-Disk: {disk}%"""
+┏━━━━━❛❟❘༻🎴༺❘❟❛━━━━━━┓
+┃ Uptime: {get_readable_time((bot_uptime))}
+┃ CPU: {cpu}%
+┃ RAM: {mem}%
+┃ Disk: {disk}%
+┗━━━━━━❘༻❛☉❟༺❘━━━━━━┛
+
+"""
     return stats
 
 
@@ -46,5 +50,5 @@ async def ping(_, message):
     end = datetime.now()
     resp = (end - start).microseconds / 1000
     await response.edit_text(
-        f"**Pong!**\n`(ノ｀Д´)ノ彡┻━┻ {resp} ms`\n\n<b><u>{MUSIC_BOT_NAME} System Stats:</u></b>{uptime} ~𝕃𝕠𝕣𝕕_𝔻𝕊ℙ_𝟛"
+        f"**Pong!**\n`📡 {resp} ms`\n\n<b><u>{MUSIC_BOT_NAME} System Stats:</u></b>{uptime}"
     )
