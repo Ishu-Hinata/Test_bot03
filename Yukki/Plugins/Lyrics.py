@@ -98,7 +98,7 @@ async def lrsearch(_, message: Message):
     
     if S is None:
         await m.edit("Lyrics not found")
-        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAADJ2J--ZcDthxSuYHxU1b2RYO8Kg6EAALCAgACh77pR7xwL6V4JH51JAQ")
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAADY2J_IMLji-mL3LSzeWT3UsvKhp1eAAKjAQAChF_oR4mPSwQeXkkTJAQ")
     xxx = f"""
 
 **Lyrics Search Powered By {MUSIC_BOT_NAME}**
