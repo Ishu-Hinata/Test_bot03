@@ -66,9 +66,15 @@ async def welcome(_, message: Message):
             if member.id in ASSIDS:
                 return await remove_active_chat(chat_id)
             if member.id in OWNER_ID:
-                await message.reply_text(
-                    f"{MUSIC_BOT_NAME}'s Owner[{member.mention}] has just joined your chat."
-                )
+                await message.reply_photo(
+
+        photo="Utils/Query.jpg",
+
+        caption=">> Pong!",
+
+    )
+
+
                 return await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAADpmKErV6FyCHXfifX2Kc0_TJ09NN-AALoAQACr7noR66BSQ3K4qGxJAQ")
             if member.id in SUDOERS:
                 return await message.reply_text(
