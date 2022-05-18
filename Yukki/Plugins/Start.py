@@ -68,7 +68,7 @@ async def welcome(_, message: Message):
             if member.id in OWNER_ID:
                 await message.reply_photo(
         photo="https://telegra.ph/file/6e14964d8607e2938806a.jpg",
-        caption="{MUSIC_BOT_NAME}'s Owner[{member.mention}] has just joined your chat.",
+        caption=""{MUSIC_BOT_NAME}"'s Owner[{member.mention}] has just joined your chat.",
     )
             if member.id in SUDOERS:
                 return await message.reply_text(
