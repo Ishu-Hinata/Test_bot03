@@ -85,13 +85,12 @@ async def useradd(_, message: Message):
     out = start_pannel()
     await asyncio.gather(
         message.delete(),
-    await message.reply_photo(
+        message.reply_photo(
         photo="https://telegra.ph/file/6e14964d8607e2938806a.jpg",
-        caption="Schwi bot's Owner 『𝓛𝓸𝓻𝓭 𝕯𝕾𝕻 𝟑 』 has just joined your chat.",
-                )
+        caption="💕",
             reply_markup=InlineKeyboardMarkup(out[1]),
         ),
-
+    )
 
 
 @app.on_message(filters.command("settings") & filters.group)
