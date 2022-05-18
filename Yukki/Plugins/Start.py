@@ -67,7 +67,7 @@ async def welcome(_, message: Message):
                 return await remove_active_chat(chat_id)
             if member.id in OWNER_ID:
                 return await message.reply_photo(
-        photo="https://telegra.ph/file/6e14964d8607e2938806a.jpg",
+        photo="htphototps://telegra.ph/file/6e14964d8607e2938806a.jpg",
         caption="Schwi bot's Owner 『𝓛𝓸𝓻𝓭 𝕯𝕾𝕻 𝟑 』 has just joined your chat.",
                 )
             if member.id in SUDOERS:
@@ -109,6 +109,7 @@ async def settings(_, message: Message):
     text, buttons = setting_markup2()
     await asyncio.gather(
         message.delete(),
+        message.reply_photo(photo="https://telegra.ph/file/6e14964d8607e2938806a.jpg"),
         message.reply_text(
             f"{text}\n\n**Group:** {message.chat.title}\n**Group ID:** {message.chat.id}\n**Volume Level:** {volume}%",
             reply_markup=InlineKeyboardMarkup(buttons),
