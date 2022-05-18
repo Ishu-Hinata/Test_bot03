@@ -73,10 +73,10 @@ async def welcome(_, message: Message):
         caption="Schwi bot's Owner 『𝓛𝓸𝓻𝓭 𝕯𝕾𝕻 𝟑 』 has just joined your chat.",
                 )
             if member.id in SUDOERS:
-                return await message.reply_text(
+                await message.reply_text(
                     f"A member of {MUSIC_BOT_NAME}'s Sudo User[{member.mention}] has just joined your chat."
                 )
-              await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAACAVJihO3AZuJ2LY5CxpAlDlN5T_72MgACDgIAApLl6UfnlbtNIAQwuiQE")
+                return await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAACAVJihO3AZuJ2LY5CxpAlDlN5T_72MgACDgIAApLl6UfnlbtNIAQwuiQE")
             return
         except:
             return
