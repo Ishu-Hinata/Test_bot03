@@ -114,10 +114,12 @@ async def settings(_, message: Message):
         message.delete(),
         message.reply_photo(
         photo="https://telegra.ph/file/8cb1eb9ed16c68afe1994.jpg"),
-        message.reply_text(
+        caption=
             f"{text}\n\n**Group:** {message.chat.title}\n**Group ID:** {message.chat.id}\n**Volume Level:** {volume}%"),
             reply_markup=InlineKeyboardMarkup(buttons),
+        ),
 
+    )
 
 
 
