@@ -86,8 +86,8 @@ async def useradd(_, message: Message):
     await asyncio.gather(
         message.delete(),
         message.reply_photo(
-        photo="https://telegra.ph/file/6e14964d8607e2938806a.jpg",
-        caption="💕",
+        photo="https://telegra.ph/file/1a1ae2d586a691b30bf22.mp4",
+        caption="𝙏𝙝𝙖𝙣𝙠𝙨 𝙛𝙤𝙧 𝙝𝙖𝙫𝙞𝙣𝙜 𝙢𝙚 𝙝𝙚𝙧𝙚 💞✨",
             reply_markup=InlineKeyboardMarkup(out[1]),
         ),
     )
