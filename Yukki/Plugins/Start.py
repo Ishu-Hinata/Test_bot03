@@ -121,7 +121,7 @@ async def okaybhai(_, CallbackQuery):
     await CallbackQuery.answer("Going Back ...")
     out = start_pannel()
     await CallbackQuery.edit_message_text(
-        text=f"https://telegra.ph/file/466b79ea3804ce33e731d.mp4                 💕🎋Thanks for having me in {CallbackQuery.message.chat.title}.\n{MUSIC_BOT_NAME}is alive.\n\nFor Owner- 𝕃𝕠𝕣𝕕_𝔻𝕊ℙ_𝟛.",
+        text=f"UwU who this baka playing with buttons? ☺️💢",
         reply_markup=InlineKeyboardMarkup(out[1]),
     )
 
