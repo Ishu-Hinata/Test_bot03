@@ -61,7 +61,7 @@ async def play(_, message: Message):
     url = get_url(message)
     if audio:
         mystic = await message.reply_text(
-            "Wait bish! Processing Audio..."
+            "Bish wait! Processing Audio..."
         )
         try:
             read = db_mem[message.chat.id]["live_check"]
@@ -75,7 +75,7 @@ async def play(_, message: Message):
             pass
         if audio.file_size > 1073741824:
             return await mystic.edit_text(
-                "Audio File Size Should Be Less Than 150 mb (╯ರ ~ ರ)╯︵ ┻━┻"
+                "Audio File Size Should Be Less Than 150 mb 🖥️"
             )
         duration_min = seconds_to_min(audio.duration)
         duration_sec = audio.duration
@@ -138,11 +138,11 @@ async def play(_, message: Message):
         return await start_stream_video(
             message,
             file,
-            "Given Video Via Telegram (ノ•̀ o •́ )ノ ~ ┻━┻",
+            "Given Video Via Telegram ",
             mystic,
         )
     elif url:
-        mystic = await message.reply_text("Bish Wait! Processing URL...")
+        mystic = await message.reply_text("Bish wait! Processing URL...")
         if not message.reply_to_message:
             query = message.text.split(None, 1)[1]
         else:
@@ -169,7 +169,7 @@ async def play(_, message: Message):
             await message.reply_photo(
                 photo="Utils/Playlist.jpg",
                 caption=(
-                    "**Usage:** /play [Music Name or Youtube Link or Reply to Audio (ಠ_ಠ)>⌐■-■ Nooob ]\n\nIf you want to play Playlists! Select the one from Below."
+                    "**Usage:** /play [Music Name or Youtube Link or Reply to Audio Nooob ]\n\nIf you want to play Playlists! Select the one from Below."
                 ),
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
@@ -222,7 +222,7 @@ async def Music_Stream(_, CallbackQuery):
         )
     if CallbackQuery.from_user.id != int(user_id):
         return await CallbackQuery.answer(
-            "This is not for you Bitch!  search Your Own Song bruh. (ಠ_ಠ)>⌐■-■",
+            "This is not for you Bish! Search & /play Your Own Song.☺️💢",
             show_alert=True,
         )
     await CallbackQuery.message.delete()
@@ -232,9 +232,9 @@ async def Music_Stream(_, CallbackQuery):
             f"**Duration Limit Exceeded**\n\n**Allowed Duration: **{DURATION_LIMIT_MIN} minute(s)\n**Received Duration:** {duration_min} minute(s)"
         )
     await CallbackQuery.answer(f"Processing:- {title[:20]}", show_alert=True)
-    mystic = await CallbackQuery.message.reply_text(
-        f"**{MUSIC_BOT_NAME} Downloader**\n\n**Title:** {title[:50]}\n\n0% ▓▓▓▓▓▓𝔻𝕊ℙ▓▓▓▓▓▓ 100%"
-    )
+    mystic = await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAADpmKErV6FyCHXfifX2Kc0_TJ09NN-AALoAQACr7noR66BSQ3K4qGxJAQ")
+
+
     downloaded_file = await loop.run_in_executor(
         None, download, videoid, mystic, title
     )
