@@ -67,7 +67,7 @@ async def welcome(_, message: Message):
                 return await remove_active_chat(chat_id)
             if member.id in OWNER_ID:
                 return await message.reply_photo(
-        photo="htphototps://telegra.ph/file/6e14964d8607e2938806a.jpg",
+        photo="https://telegra.ph/file/6e14964d8607e2938806a.jpg",
         caption="Schwi bot's Owner 『𝓛𝓸𝓻𝓭 𝕯𝕾𝕻 𝟑 』 has just joined your chat.",
                 )
             if member.id in SUDOERS:
@@ -86,7 +86,7 @@ async def useradd(_, message: Message):
     await asyncio.gather(
         message.delete(),
         message.reply_photo(
-        photo="https://telegra.ph/file/f73e78c1d944248ccef7c.jpg",
+        photo="https://telegra.ph/file/ab9903ddbfcf429d14c69.jpg",
         caption="𝙏𝙝𝙖𝙣𝙠𝙨 𝙛𝙤𝙧 𝙝𝙖𝙫𝙞𝙣𝙜 𝙢𝙚 𝙝𝙚𝙧𝙚 💞✨",
             reply_markup=InlineKeyboardMarkup(out[1]),
         ),
@@ -121,7 +121,7 @@ async def okaybhai(_, CallbackQuery):
     await CallbackQuery.answer("Going Back ...")
     out = start_pannel()
     await CallbackQuery.edit_message_text(
-        text=f"UwU who this baka playing with buttons? ☺️💢",
+        text=f"Who's this baka playing with buttons? ☺️💢",
         reply_markup=InlineKeyboardMarkup(out[1]),
     )
 
