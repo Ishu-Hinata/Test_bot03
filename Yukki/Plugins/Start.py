@@ -126,7 +126,6 @@ async def okaybhai(_, CallbackQuery):
     out = start_pannel()
     await CallbackQuery.edit_message_text(
         text=f"Who's this baka playing with buttons? ☺️💢",
-
         reply_markup=InlineKeyboardMarkup(out[1]),
     )
 
