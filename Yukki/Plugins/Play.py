@@ -355,7 +355,7 @@ async def slider_query_results(_, CallbackQuery):
     what, type, query, user_id = callback_request.split("|")
     if CallbackQuery.from_user.id != int(user_id):
         return await CallbackQuery.answer(
-            "Search Your Own Music bish. You're not allowed to use this button.(ノ•̀ o •́ )ノ ~ ┻━┻",
+            "Bish Play your Own Music . You're not allowed to use this button.☺️💢",
             show_alert=True,
         )
     what = str(what)
