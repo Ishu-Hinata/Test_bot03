@@ -66,7 +66,7 @@ async def welcome(_, message: Message):
             if member.id in ASSIDS:
                 return await remove_active_chat(chat_id)
             if member.id in OWNER_ID:
-                await message.reply_photo(
+                return await message.reply_photo(
         photo="https://telegra.ph/file/6e14964d8607e2938806a.jpg",
         caption="Schwi bot's Owner 『𝓛𝓸𝓻𝓭 𝕯𝕾𝕻 𝟑 』 has just joined your chat.",
                 )
