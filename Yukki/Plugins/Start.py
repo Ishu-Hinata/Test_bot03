@@ -85,8 +85,10 @@ async def useradd(_, message: Message):
     out = start_pannel()
     await asyncio.gather(
         message.delete(),
-        message.reply_text(
-            f"https://telegra.ph/file/466b79ea3804ce33e731d.mp4               💕🎋Thanks for having me in {message.chat.title}.\n{MUSIC_BOT_NAME} is alive.\n\n Owner -𝕃𝕠𝕣𝕕_𝔻𝕊ℙ_𝟛.",
+        message.reply_photo(
+        photo="https://telegra.ph/file/6e14964d8607e2938806a.jpg",
+        caption="Schwi bot's Owner 『𝓛𝓸𝓻𝓭 𝕯𝕾𝕻 𝟑 』 has just joined your chat.",
+                )
             reply_markup=InlineKeyboardMarkup(out[1]),
         ),
     )
