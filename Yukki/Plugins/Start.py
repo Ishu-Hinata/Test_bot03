@@ -59,6 +59,9 @@ async def welcome(_, message: Message):
                     ASS_ACC,
                 ) = await get_assistant_details(ran_ass)
                 out = start_pannel()
+                await message.reply_photo(
+
+        photo="https://telegra.ph/file/6e14964d8607e2938806a.jpg"),
                 await message.reply_text(
                     f"𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 {MUSIC_BOT_NAME} 𝙈𝙤𝙨𝙩 𝙖𝙙𝙫𝙖𝙣𝙘𝙚𝙙 & (𝙎𝙚𝙡𝙛-𝙢𝙤𝙙𝙞𝙛𝙞𝙚𝙙) 𝘾𝙪𝙨𝙩𝙤𝙢 𝙈𝙪𝙨𝙞𝙘 𝘽𝙤𝙩~ \n\nPromote me as administrator otherwise I will not be able to function properly.\n\n⛑️Assistance or Help:- @{ASS_USERNAME}\n🎋Owner:- @Lord_DSP_3 ",
                     reply_markup=InlineKeyboardMarkup(out[1]),
