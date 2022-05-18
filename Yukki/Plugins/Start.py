@@ -124,8 +124,9 @@ async def settings(_, message: Message):
 async def okaybhai(_, CallbackQuery):
     await CallbackQuery.answer("Going Back ...")
     out = start_pannel()
-    await CallbackQuery.edit_message_text(
-        text=f"Who's this baka playing with buttons? ☺️💢",
+    await CallbackQuery.edit_message_photo(
+        photo="https://telegra.ph/file/cc271bbb7b009c420a9c3.jpg",
+        caption=f"Who's this baka playing with buttons? ☺️💢",
         reply_markup=InlineKeyboardMarkup(out[1]),
     )
 
