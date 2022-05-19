@@ -97,7 +97,7 @@ async def admins(_, message: Message):
         await message.reply_text(
             f"🎧 Voicechat End/Stopped by {message.from_user.mention}!"
         )
-        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH12EYn5lA9DtU90mQ2LL-2qRBjdSPP0AAk0DAAITxulHgwa4nEH6gUQkBA")
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAACAf9ihZ-AOGT2Ph09oeFGnj_u876mRQACogIAAtpGMEQraeVfeW2ZWiQE")
     if message.command[0][1] == "k":
         if message.chat.id not in db_mem:
             db_mem[message.chat.id] = {}
@@ -111,7 +111,7 @@ async def admins(_, message: Message):
                 "No more music in __Queue__"
             )
             await stop_stream(chat_id)
-            return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH1wjYn5eLjI8YcSJsiC_Z8WxaR3I0LEAAmACAAIMgulHSExTaqojqSkkBA")
+            return await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAACAf9ihZ-AOGT2Ph09oeFGnj_u876mRQACogIAAtpGMEQraeVfeW2ZWiQE")
         else:
             videoid = Queues.get(chat_id)["file"]
             got_queue = get_queue.get(chat_id)
