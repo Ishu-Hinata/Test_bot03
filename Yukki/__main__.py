@@ -410,9 +410,6 @@ async def help_parser(name, keyboard=None):
     return (
         """Help Pannel 🖥️
 Use button below to explore all cammand and their use...
-
-
-.
 """.format(
             first_name=name
         ),
