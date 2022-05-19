@@ -408,11 +408,11 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """Hey Bitch {first_name},
+        """Help Pannel 🖥️
+Use button below to explore all cammand and their use...
 
-Every Cammand is so fucking simple,Just what trying to do 🔪.
 
-Report error - @Lord_DSP_3 (you can also send your Girlfriend's nudes🤙.
+.
 """.format(
             first_name=name
         ),
