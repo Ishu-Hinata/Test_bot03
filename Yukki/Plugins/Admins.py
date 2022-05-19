@@ -36,15 +36,15 @@ __MODULE__ = "Admin"
 __HELP__ = """
 
 
-/pause - Pause the Fakin music on voice chat ,, bruh honestly explaination not needed.
+/pause - Pause the Fakin music on voice chat.🎋
 
-/resume - Resume the paused music on voice chat,, obvious one -_-.
+/resume - Resume the paused music on voice chat.❤️
 
-/skip - Skip the current playing music on voice chat, only handsome admins and auth users 
+/skip - Skip the current playing music on voice chat.🎋
 
-/stop - Stop the playout.
+/stop - Stop the playout,, /end works the same.❤️
 
-/queue - Check queue list.
+/queue - Check queue list.🦋
 """
 
 
@@ -62,11 +62,11 @@ async def admins(_, message: Message):
         await message.reply_text(
             "But Nothing is playing on voice chat.... "
         )
-        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAACAdVihZjjkGmt5prb0TbEiwrEOYREdAACDAMAAo0dMEQDXk2CX77VrSQE")
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAACAhpihaFEogABOzBd3mkIsJV_qkGKNgkAAugBAAL1NTBEWeF0gpghsugkBA")
     chat_id = message.chat.id
     if message.command[0][1] == "a":
         if not await is_music_playing(message.chat.id):
-            return await message.reply_text("Music is already Paused bitch.")
+            return await message.reply_text("Music is already Paused bish.")
         await music_off(chat_id)
         await pause_stream(chat_id)
         await message.reply_text(
@@ -81,7 +81,7 @@ async def admins(_, message: Message):
         await message.reply_text(
             f"🎧 Voicechat Resumed by {message.from_user.mention}!"
         )
-        return await app.send_sticker(message.chat.id,"CAACAgUAAx0CZ9BLhAACAcBihRGrydfDz9yfgqmziC0_jqMZDQACsgUAAqINKFQZzOFyWsTWRyQE")
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAACAghihaCpP7EkPLs9xf4Mp4IgOq9eJAACDAMAAo0dMEQDXk2CX77VrSQE")
     if message.command[0][1] == "t" or message.command[0][1] == "n":
         if message.chat.id not in db_mem:
             db_mem[message.chat.id] = {}
