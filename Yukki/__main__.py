@@ -407,7 +407,6 @@ async def start_command(_, message):
 async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
-    await message.reply_photo(photo="https://telegra.ph/file/1e4adde1013173fc6dedb.jpg")
     return (
         """Help Pannel 🖥️
 Use button below to explore all cammand and their use...
