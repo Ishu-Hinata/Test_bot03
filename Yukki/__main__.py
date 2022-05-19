@@ -241,7 +241,6 @@ async def initiate_bot():
     console.print(f"\n[red]Stopping Bot")
     )
     end = datetime.now()
-
     resp = (end - start).microseconds / 1000
     )
 
