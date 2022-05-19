@@ -2,6 +2,7 @@ import asyncio
 import importlib
 import os
 import re
+import multiprocessing
 import time
 from datetime import datetime
 from sys import version as pyver
@@ -244,7 +245,7 @@ async def initiate_bot():
     await idle()
     console.print(f"\n[red]Stopping Bot")
     bot_uptime = int(time.time() - boottime)
-
+        uptime = f"{get_readable_time((bot_uptime))}"
 
 home_text_pm = f"""Hey there I'm {BOT_NAME} !
 ╔═════༻🦋༺═════╗
@@ -254,7 +255,7 @@ home_text_pm = f"""Hey there I'm {BOT_NAME} !
 ║ㅤㅤㅤ┗𝐴𝑣𝑜𝑖𝑑 𝑆𝑝𝑎𝑚 & 𝐾𝑒𝑒𝑝 𝐶ℎ𝑎𝑡 𝐶𝑙𝑒𝑎𝑛
 ╠════════⌬
 ╟𝙋𝙞𝙣𝙜 ⌱ 38.006 ms
-╟𝙐𝙥𝙩𝙞𝙢𝙚 ⌱ {get_readable_time((bot_uptime))}
+╟𝙐𝙥𝙩𝙞𝙢𝙚 ⌱ {uptime}
 ╟𝙎𝙚𝙧𝙫𝙚𝙙 𝘾𝙝𝙖𝙩𝙨 ⌭ len(served_chats)
 ╟𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙭 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 ⌭ @Schwi_bots
 ╚═════༻🦋༺═════╝
