@@ -60,7 +60,7 @@ async def admins(_, message: Message):
         return await message.reply_text("Error! Wrong Usage of Command...hehe noob.")
     if not await is_active_chat(message.chat.id):
         await message.reply_text(
-            " but Nothing is playing on voice chat.... "
+            "But Nothing is playing on voice chat.... "
         )
         return await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAACAdVihZjjkGmt5prb0TbEiwrEOYREdAACDAMAAo0dMEQDXk2CX77VrSQE")
     chat_id = message.chat.id
