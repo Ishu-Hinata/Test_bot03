@@ -57,12 +57,12 @@ __HELP__ = """
 async def admins(_, message: Message):
     global get_queue
     if not len(message.command) == 1:
-        return await message.reply_text("Error! Wrong Usage of Command...hehe fakin noob.")
+        return await message.reply_text("Error! Wrong Usage of Command...hehe noob.")
     if not await is_active_chat(message.chat.id):
         await message.reply_text(
-            "Excuse me, but Nothing is playing on voice chat.... Baaka ;) "
+            " but Nothing is playing on voice chat.... "
         )
-        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CWu9UpwABH13SYn5m3ENG8LFpm5Rt_kICb1-nTGIAAlkCAAKcOelHgCDg93HtiYUkBA")
+        return await app.send_sticker(message.chat.id,"CAACAgEAAx0CZ9BLhAACAdVihZjjkGmt5prb0TbEiwrEOYREdAACDAMAAo0dMEQDXk2CX77VrSQE")
     chat_id = message.chat.id
     if message.command[0][1] == "a":
         if not await is_music_playing(message.chat.id):
