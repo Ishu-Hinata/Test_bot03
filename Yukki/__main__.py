@@ -239,7 +239,11 @@ async def initiate_bot():
         await pytgcalls5.start()
     await idle()
     console.print(f"\n[red]Stopping Bot")
+    )
+    end = datetime.now()
 
+    resp = (end - start).microseconds / 1000
+    )
 
 home_text_pm = f"""Hey there I'm {BOT_NAME} !
 ╔═════༻🦋༺═════╗
