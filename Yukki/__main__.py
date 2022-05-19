@@ -241,12 +241,23 @@ async def initiate_bot():
     console.print(f"\n[red]Stopping Bot")
 
 
-home_text_pm = f"""Hello ,
-Hi! I'm {BOT_NAME} 💕.
-An Ex-Machina... I can't sing but i can help u playing Songs in VC. 🖥️🎶
+home_text_pm = f"""Hey there I'm {BOT_NAME} !
+╔═════༻🦋༺═════╗
+║𝙵𝚎𝚊𝚝𝚞𝚛𝚎𝚜  
+║ㅤㅤㅤ┏𝐺𝑟𝑜𝑢𝑝 𝑀𝑎𝑛𝑎𝑔𝑒𝑚𝑒𝑛𝑡
+║ㅤㅤㅤ┠𝑆𝑡𝑟𝑒𝑎𝑚 𝑉𝑖𝑑𝑒𝑜/𝑀𝑢𝑠𝑖𝑐
+║ㅤㅤㅤ┗𝐴𝑣𝑜𝑖𝑑 𝑆𝑝𝑎𝑚 & 𝐾𝑒𝑒𝑝 𝐶ℎ𝑎𝑡 𝐶𝑙𝑒𝑎𝑛
+╠════════⌬
+╟𝙋𝙞𝙣𝙜 ⌱  {resp} ms
+╟𝙐𝙥𝙩𝙞𝙢𝙚 ⌱ {get_readable_time((bot_uptime))}
+╟𝙎𝙚𝙧𝙫𝙚𝙙 𝘾𝙝𝙖𝙩𝙨 ⌭ {len(served_chats)}
+╟𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙭 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 ⌭ @Schwi_bots
+╚═════༻🦋༺═════╝
 
-Onii-Chan - @Lord_DSP_3 🎋 """
-
+┏━━━━━━━━━━━━┓
+┃𝓞𝔀𝓷𝓮𝓻  ⋟ @Lord_DSP_3
+┗━━━━━━━━━━━━┛
+"""
 
 @app.on_message(filters.command("help") & filters.private)
 async def help_command(_, message):
