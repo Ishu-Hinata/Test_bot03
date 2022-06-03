@@ -25,7 +25,7 @@
     },
     "BOT_TOKEN": {
       "description": "A Bot's token from Botfather",
-      "value": "5159380814:AAEb6stv0MuBJO_NztUkSQvGQl3raJzGvE0",
+      "value": "5024837423:AAGAi54Di5ImEYEOQM1fNkT_ZnEUPpK5Iq4",
       "required": true
     },
     "DURATION_LIMIT": {
@@ -45,7 +45,7 @@
     },
     "MUSIC_BOT_NAME": {
       "description": "A name for your Music Bot.",
-      "value": "@Schwi_Musicbot",
+      "value": "𝑺𝒉𝒖𝒗𝒊",
       "required": true
     },
     "SUPPORT_CHANNEL": {
@@ -65,7 +65,7 @@
     },
     "START_IMG_URL": {
       "description": "Telegraph Image Link for the Private Start Message",
-      "value": "https://telegra.ph/file/579fa89fa92f3add2102f.jpg",
+      "value": "https://telegra.ph/file/d3e194c85b963dbe5d8d5.jpg",
       "required": false
     },
     "STRING_SESSION1": {
