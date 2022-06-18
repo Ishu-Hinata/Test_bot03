@@ -184,6 +184,17 @@ def private_panel():
                     text="🎋Anime Chat🎋", url=f"{SUPPORT_GROUP}"
                 ),
             ],
+        [
+
+            InlineKeyboardButton(text="▶️", callback_data=f"resumecb"),
+
+            InlineKeyboardButton(text="⏸️", callback_data=f"pausecb"),
+
+            InlineKeyboardButton(text="⏭️", callback_data=f"skipcb"),
+
+            InlineKeyboardButton(text="⏹️", callback_data=f"stopcb"),
+
+        ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
 
