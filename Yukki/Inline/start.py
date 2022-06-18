@@ -185,10 +185,10 @@ def private_panel():
                 ),
             ],
         [
-            InlineKeyboardButton(text="▶️", callback_data=f"resumecb"),
-            InlineKeyboardButton(text="⏸️", callback_data=f"pausecb"),
-            InlineKeyboardButton(text="⏭️", callback_data=f"skipcb"),
-            InlineKeyboardButton(text="⏹️", callback_data=f"stopcb"),
+            InlineKeyboardButton(text="💙", url=f"https://t.me/Miss_Jibril"),
+            InlineKeyboardButton(text="💛", url=f"https://t.me/Miss_Jibril"),
+            InlineKeyboardButton(text="❤️", url=f"https://t.me/Miss_Jibril"),
+            InlineKeyboardButton(text="💚", url=f"https://t.me/Miss_Jibril"),
         ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
