@@ -178,10 +178,10 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="🦋Anime Channel🦋", url=f"{SUPPORT_CHANNEL}"
+                    text="🍥Anime Hub🍥", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="🎋Anime  Chat Group🎋", url=f"{SUPPORT_GROUP}"
+                    text="🎋Anime Chat🎋", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
