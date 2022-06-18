@@ -461,10 +461,10 @@ All commands can be used with: /
             [
                 [
                     InlineKeyboardButton(
-                        text="🩸 Back", callback_data="help_back"
+                        text="Back", callback_data="help_back"
                     ),
                     InlineKeyboardButton(
-                        text="🩸 Close", callback_data="close"
+                        text="Close", callback_data="close"
                     ),
                 ],
             ]
