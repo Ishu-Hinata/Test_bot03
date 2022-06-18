@@ -246,7 +246,7 @@ async def initiate_bot():
     console.print(f"\n[red]Stopping Bot")
 
 
-home_text_pm = f"""Hey there I'm {BOT_NAME} !
+home_text_pm = f"""
 ╔═════༻🦋༺═════╗
 ║𝙵𝚎𝚊𝚝𝚞𝚛𝚎𝚜  
 ║┏𝑆𝑡𝑟𝑒𝑎𝑚 𝑉𝑖𝑑𝑒𝑜 & 𝑀𝑢𝑠𝑖𝑐.
