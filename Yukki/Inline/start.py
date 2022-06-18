@@ -172,10 +172,10 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="🍥Anime Hub🍥", url=f"{SUPPORT_CHANNEL}"
+                    text="🦋Anime Memes🔺", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="🎋Anime Chat🎋", url=f"https://t.me/+LuNfF7pzIggyNWE1"
+                    text="🔺Anime Chat🎋", url=f"https://t.me/+LuNfF7pzIggyNWE1"
                 ),
             ],
         [
@@ -184,6 +184,10 @@ def private_panel():
             InlineKeyboardButton(text="🦊", url=f"https://t.me/Miss_Izuna"),
             InlineKeyboardButton(text="🔮", url=f"https://t.me/Miss_FIEL"),
             InlineKeyboardButton(text="🍒", url=f"https://t.me/Miss_Shiro"),
+        ],
+        [
+            InlineKeyboardButton(text="『𝑩𝒐𝒕 𝑶𝒘𝒏𝒆𝒓』", url=f"https://t.me/Lord_DSP_3"),
+            InlineKeyboardButton(text="𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🖥️", url=f"https://youtube.com/channel/UCq2HW69AArzMpR5p-Uo31Pw"),
         ],
             [
                 InlineKeyboardButton(
