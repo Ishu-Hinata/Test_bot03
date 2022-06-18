@@ -38,7 +38,7 @@ def download(videoid: str, mystic, title) -> str:
                 try:
                     if eta > 2:
                         mystic.edit(
-                            f"**{MUSIC_BOT_NAME} Downloader**\n\n**Title:** {title[:50]}:\n**FileSize:** {size}\n\n**<u>Downloaded:</u>**\n**Speed:** {speed}\n**ETA:** {eta} Seconds\n\n\n{percentage} ▓▓▓▓▓▓𝔻𝕊ℙ▓▓▓▓▓ 100%"
+                            f"❣️"
                         )
                 except Exception as e:
                     pass
@@ -47,21 +47,21 @@ def download(videoid: str, mystic, title) -> str:
                     flex[str(bytesx)] += 1
                     if eta > 2:
                         mystic.edit(
-                            f"**{MUSIC_BOT_NAME}Downloader**\n\n**Title:** {title[:50]}:\n**FileSize:** {size}\n\n**<u>Downloaded:</u>**\n**Speed:** {speed}\n**ETA:** {eta} Seconds\n\n\n{percentage} ███𝔻𝕊ℙ▓▓▓▓▓▓▓▓▓ 100%"
+                            f"💙"
                         )
             if per > 500:
                 if flex[str(bytesx)] == 3:
                     flex[str(bytesx)] += 1
                     if eta > 2:
                         mystic.edit(
-                            f"**{MUSIC_BOT_NAME} Downloader**\n\n**Title:** {title[:50]}:\n**FileSize:** {size}\n\n**<u>Downloaded:</u>**\n**Speed:** {speed}\n**ETA:** {eta} Seconds\n\n\n{percentage} ██████𝔻𝕊ℙ▓▓▓▓▓▓ 100%"
+                            f"💛"
                         )
             if per > 800:
                 if flex[str(bytesx)] == 4:
                     flex[str(bytesx)] += 1
                     if eta > 2:
                         mystic.edit(
-                            f"**{MUSIC_BOT_NAME} Downloader**\n\n**Title:** {title[:50]}:\n**FileSize:** {size}\n\n**<u>Downloaded:</u>**\n**Speed:** {speed}\n**ETA:** {eta} Seconds\n\n\n{percentage} ██████████𝔻𝕊ℙ▓▓ 100%"
+                            f"💚"
                         )
         if d["status"] == "finished":
             try:
