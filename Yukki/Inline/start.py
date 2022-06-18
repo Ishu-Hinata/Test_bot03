@@ -175,7 +175,7 @@ def private_panel():
                     text="🍥Anime Hub🍥", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="🎋Anime Chat🎋", url=f"{SUPPORT_GROUP}"
+                    text="🎋Anime Chat🎋", url=f"https://t.me/+LuNfF7pzIggyNWE1"
                 ),
             ],
         [
