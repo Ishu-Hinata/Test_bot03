@@ -434,11 +434,11 @@ async def help_button(client, query):
     next_match = re.match(r"help_next\((.+?)\)", query.data)
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
-    top_text = f"""Hello {query.from_user.first_name},
-
+    top_photo = f"https://telegra.ph/file/1e4adde1013173fc6dedb.jpg"
+    top_text = f"""Hey! {query.from_user.first_name},
 Click on the buttons for more information.
-
 All commands can be used with: /
+Hope you're not just Playing with Buttons ☺️💢.
  """
     if mod_match:
         module = mod_match.group(1)
