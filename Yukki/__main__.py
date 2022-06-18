@@ -402,8 +402,9 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """Help Pannel 🖥️
-Use button below to explore all cammand and their use...
+        """🖥️ Help Pannel 🖥️
+⌱Use button below to explore all cammand and their use...
+⌱All Cammands Can be used with: /
 """.format(
             first_name=name
         ),
@@ -435,10 +436,8 @@ async def help_button(client, query):
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
     edit_photo = f"https://telegra.ph/file/1e4adde1013173fc6dedb.jpg"
-    top_text = f"""Hey! {query.from_user.first_name},
-Click on the buttons for more information.
-All commands can be used with: /
-Hope you're not just Playing with Buttons ☺️💢.
+    top_text = f"""{query.from_user.first_name}, hope you're not just Playing with Buttons.
+☺️💢
  """
     if mod_match:
         module = mod_match.group(1)
