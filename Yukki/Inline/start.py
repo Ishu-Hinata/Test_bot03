@@ -27,77 +27,20 @@ def setting_markup2():
 
 
 def start_pannel():
-    if not SUPPORT_CHANNEL and not SUPPORT_GROUP:
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    text="🔧 Settings", callback_data="settingm"
-                )
-            ],
-        ]
-        return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
-    if not SUPPORT_CHANNEL and SUPPORT_GROUP:
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    text="🔧 Settings", callback_data="settingm"
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="🎋Anime Chat Group🎋", url=f"{SUPPORT_GROUP}"
-                ),
-            ],
-        ]
-        return f"🎛  **This is {MUSIC_BOT_NAME}*", buttons
-    if SUPPORT_CHANNEL and not SUPPORT_GROUP:
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    text="🔧 Settings", callback_data="settingm"
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="🦋Anime Channel🦋", url=f"{SUPPORT_CHANNEL}"
-                ),
-            ],
-        ]
-        return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="⛑️ Helper Commands Menu ⛑️", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="🔧 Settings", callback_data="settingm"
+                    text="🍥 Settings 🍥", callback_data="settingm"
                 )
             ],
             [
-                InlineKeyboardButton(
-                    text="🦋Anime Channel🦋", url=f"{SUPPORT_CHANNEL}"
-                ),
-                InlineKeyboardButton(
-                    text="🎋Anime Chat Group🎋", url=f"{SUPPORT_GROUP}"
-                ),
+                InlineKeyboardButton(text="🖥️ SUPPORT GROUP 🖥️", url=f"https://t.me/+LuNfF7pzIggyNWE1"),
             ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
