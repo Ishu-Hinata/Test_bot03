@@ -172,12 +172,6 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    "➕ Add me to your Group",
-                    url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                )
-            ],
-            [
-                InlineKeyboardButton(
                     text="🍥Anime Hub🍥", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
@@ -191,6 +185,12 @@ def private_panel():
             InlineKeyboardButton(text="🔮", url=f"https://t.me/Miss_FIEL"),
             InlineKeyboardButton(text="🍒", url=f"https://t.me/Miss_Shiro"),
         ],
+            [
+                InlineKeyboardButton(
+                    "➕ Add me to your Group",
+                    url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                )
+            ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
 
