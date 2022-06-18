@@ -115,10 +115,10 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="🦋Anime Memes🔺", url=f"{SUPPORT_CHANNEL}"
+                    text="🦋Anime Memes🦋", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="🔺Anime Chat🎋", url=f"https://t.me/+LuNfF7pzIggyNWE1"
+                    text="🎋Anime Chat🎋", url=f"https://t.me/+LuNfF7pzIggyNWE1"
                 ),
             ],
         [
@@ -134,7 +134,7 @@ def private_panel():
         ],
             [
                 InlineKeyboardButton(
-                    "➕ Add me to your Group",
+                    "🎧🔺ADD ME TO YOUR GROUP🔺🎧",
                     url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                 )
             ],
