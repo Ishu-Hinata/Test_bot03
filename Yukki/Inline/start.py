@@ -109,18 +109,13 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu",
+                    text="⛑️ Helper Commands Menu ⛑️",
                     callback_data="search_helper_mess",
                 ),
             ],
-            [
-                InlineKeyboardButton(
-                    text="🦋Anime Memes🦋", url=f"{SUPPORT_CHANNEL}"
-                ),
-                InlineKeyboardButton(
-                    text="🎋Anime Chat🎋", url=f"https://t.me/+LuNfF7pzIggyNWE1"
-                ),
-            ],
+        [       
+            InlineKeyboardButton(text="🖥️✨ 𝗔𝗡𝗜𝗠𝗘 𝗖𝗛𝗔𝗧 𝗚𝗥𝗢𝗨𝗣 ✨🖥️", url=f"https://t.me/+LuNfF7pzIggyNWE1"),
+        ],
         [
             InlineKeyboardButton(text="💕", url=f"https://t.me/Miss_Jibril"),
             InlineKeyboardButton(text="♥️", url=f"https://t.me/Miss_STEPHANIEE"),
