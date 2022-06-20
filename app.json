@@ -25,7 +25,7 @@
     },
     "BOT_TOKEN": {
       "description": "A Bot's token from Botfather",
-      "value": "5024837423:AAGAi54Di5ImEYEOQM1fNkT_ZnEUPpK5Iq4",
+      "value": "",
       "required": true
     },
     "DURATION_LIMIT": {
