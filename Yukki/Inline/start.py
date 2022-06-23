@@ -117,11 +117,11 @@ def private_panel():
             InlineKeyboardButton(text="🖥️✨ 𝗔𝗡𝗜𝗠𝗘 𝗖𝗛𝗔𝗧 𝗚𝗥𝗢𝗨𝗣 ✨🖥️", url=f"https://t.me/+LuNfF7pzIggyNWE1"),
         ],
         [
-            InlineKeyboardButton(text="💕", url=f"https://t.me/Miss_Jibril"),
+            InlineKeyboardButton(text="💕", url=f"https://t.me/Misss_Jibril"),
             InlineKeyboardButton(text="♥️", url=f"https://t.me/Miss_STEPHANIEE"),
             InlineKeyboardButton(text="🦊", url=f"https://t.me/Miss_Izuna"),
             InlineKeyboardButton(text="🔮", url=f"https://t.me/Miss_FIEL"),
-            InlineKeyboardButton(text="🍒", url=f"https://t.me/Miss_Shiro"),
+            InlineKeyboardButton(text="🍒", url=f"https://t.me/Misss_Shiro"),
         ],
         [
             InlineKeyboardButton(text="『𝑩𝒐𝒕 𝑶𝒘𝒏𝒆𝒓』", url=f"https://t.me/Lord_DSP_3"),
