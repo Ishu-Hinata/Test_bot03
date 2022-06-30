@@ -95,6 +95,9 @@ async def useradd(_, message: Message):
         ),
     )
 
+@app.on_message(filters.command(["dsp"]))
+async def on_private_help(_, message: Message):
+    return await message.reply_text(f"✅ ALIVE.)
 
 @app.on_message(filters.command("settings") & filters.group)
 @PermissionCheck
