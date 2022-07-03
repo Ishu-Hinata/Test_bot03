@@ -261,6 +261,11 @@ async def help_command(_, message):
     text, keyboard = await help_parser(message.from_user.mention)
     await app.send_message(message.chat.id, text, reply_markup=keyboard)
 
+@.on_message(filters.regex(pattern="rip, that's not quite right...") & filters.chat(Var.GROUPS))
+async def rip(ub, message):
+    await asyncio.sleep(3)
+    await message.delete()
+
 
 @app.on_message(filters.command("start") & filters.private)
 async def start_command(_, message):
