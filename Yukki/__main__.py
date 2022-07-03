@@ -262,9 +262,41 @@ async def help_command(_, message):
     await app.send_message(message.chat.id, text, reply_markup=keyboard)
 
 @ASS_CLI_1.on_message(filters.regex(pattern="kek that doesn't look right. Reply to someone like this:"))
-async def rip(ub, message):
+async def rip(ASS_CLI_1, message):
     await asyncio.sleep(3)
     await message.delete()
+
+@ASS_CLI_1.on_message(filters.regex(pattern="You've been offered a waifu trade!"))
+async def trade(ASS_CLI_1, message):
+    await asyncio.sleep(35)
+    await message.delete()
+    
+@ASS_CLI_1.on_message(filters.regex(pattern="rip, the waifu has run away already..."))
+async def ran(ASS_CLI_1, message):
+    await asyncio.sleep(7)
+    async for m in ASS_CLI_1.search_messages(message.chat.id, query='A qt waifu appeared!', limit=1):
+        await m.delete()
+    await asyncio.sleep(14)
+    await message.delete()
+    
+@ASS_CLI_1.on_message(filters.regex(pattern="rip, that's not quite right...") & filters.chat(Var.GROUPS))
+async def rip(ASS_CLI_1, message):
+    await asyncio.sleep(2)
+    await message.delete()
+    
+@ASS_CLI_1.on_message(filters.regex(pattern="OwO you protecc'd"))
+async def done(ASS_CLI_1, message):
+    await asyncio.sleep(9)
+    async for m in ASS_CLI_1.search_messages(message.chat.id, query='A qt waifu appeared!', limit=1):
+        await m.delete()
+    await asyncio.sleep(6)
+    await message.delete()
+    
+@ASS_CLI_1.on_message(filters.regex(pattern="Top harems in"))
+async def top(ASS_CLI_1, message):
+    await asyncio.sleep(70)
+    await message.delete()
+
 
 
 @app.on_message(filters.command("start") & filters.private)
