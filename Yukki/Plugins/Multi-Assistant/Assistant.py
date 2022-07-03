@@ -1,3 +1,4 @@
+import asyncio
 from inspect import getfullargspec
 
 from pyrogram import Client, filters
