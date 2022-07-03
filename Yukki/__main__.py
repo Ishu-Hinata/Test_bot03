@@ -279,7 +279,7 @@ async def ran(ASS_CLI_1, message):
     await asyncio.sleep(14)
     await message.delete()
     
-@ASS_CLI_1.on_message(filters.regex(pattern="rip, that's not quite right...") & filters.chat(Var.GROUPS))
+@ASS_CLI_1.on_message(filters.regex(pattern="rip, that's not quite right..."))
 async def rip(ASS_CLI_1, message):
     await asyncio.sleep(2)
     await message.delete()
