@@ -261,7 +261,7 @@ async def help_command(_, message):
     text, keyboard = await help_parser(message.from_user.mention)
     await app.send_message(message.chat.id, text, reply_markup=keyboard)
 
-@ASS_CLI_1.on_message(filters(pattern="kek that doesn't look right. Reply to someone like this:"))
+@ASS_CLI_1.on_message(filters.regex(pattern="kek that doesn't look right. Reply to someone like this:"))
 async def rip(ub, message):
     await asyncio.sleep(3)
     await message.delete()
