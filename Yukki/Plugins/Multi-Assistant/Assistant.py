@@ -58,7 +58,7 @@ async def awaiting_message(client, message):
         f"💕"
     )
 
-TO_DELETE1 = ["❌ You need to specify a name, using the following format:" , "rip, that's not quite right..."] 
+TO_DELETE1 = ["❌ You need to specify a name, using the following format:" , "rip, that's not quite right..." , "number to change after how many messages" , "🗂 - Series list" , "❌ Error! Reply to someone like this:" , "kek that doesn't look right. Reply to someone like this:"] 
 
 @ASS_CLI_1.on_message(filters.text & filters.group & filters.incoming & ~filters.edited, group=-100,
 
@@ -69,45 +69,24 @@ async def watcher_chat(_, message):
             await asyncio.sleep(3)
             await message.delete()
 
-TO_DELETE2 = ["❌ Error! Reply to someone like this:" , "kek that doesn't look right. Reply to someone like this:"] 
+TOPPER = ["🏆 Top harems in" , "Top harems in"] 
 
 @ASS_CLI_1.on_message(filters.text & filters.group & filters.incoming & ~filters.edited, group=-100,
 
 )
 async def watcher_chat(_, message):
-    for text in TO_DELETE2:
-        if text in message.text:
-            await asyncio.sleep(10)
-            await message.delete()
-
-TO_DELETE3 = ["number to change after how many messages " , "🗂 - Series list"] 
-
-@ASS_CLI_1.on_message(filters.text & filters.group & filters.incoming & ~filters.edited, group=-100,
-
-)
-async def watcher_chat(_, message):
-    for text in TO_DELETE3:
-        if text in message.text:
-            await message.delete()
-
-TO_DELETE4 = ["🏆 Top harems in" , "Top harems in"] 
-
-@ASS_CLI_1.on_message(filters.text & filters.group & filters.incoming & ~filters.edited, group=-100,
-
-)
-async def watcher_chat(_, message):
-    for text in TO_DELETE4:
+    for text in TOPPER:
         if text in message.text:
             await asyncio.sleep(45)
             await message.delete()
 
-TO_DELETE5 = ["has sent you a trade offer!" , "✅🤝 Trade completed!"] 
+TRADE = ["has sent you a trade offer!" , "✅🤝 Trade completed!"] 
 
 @ASS_CLI_1.on_message(filters.text & filters.group & filters.incoming & ~filters.edited, group=-100,
 
 )
 async def watcher_chat(_, message):
-    for text in TO_DELETE5:
+    for text in TRADE:
         if text in message.text:
             await asyncio.sleep(90)
             await message.delete()
