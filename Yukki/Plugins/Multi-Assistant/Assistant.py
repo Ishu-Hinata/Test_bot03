@@ -69,7 +69,16 @@ async def watcher_chat(_, message):
             await asyncio.sleep(3)
             await message.delete()
 
+TO_DELETE2 = ["❌ Error! Reply to someone like this:" , "kek that doesn't look right. Reply to someone like this:"] 
 
+@ASS_CLI_1.on_message(filters.text & filters.group & filters.incoming & ~filters.edited, group=-100,
+
+)
+async def watcher_chat(_, message):
+    for text in TO_DELETE2:
+        if text in message.text:
+            await asyncio.sleep(10)
+            await message.delete()
 
 
 @Client.on_message(
