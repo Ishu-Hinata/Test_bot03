@@ -101,6 +101,16 @@ async def watcher_chat(_, message):
             await asyncio.sleep(45)
             await message.delete()
 
+TO_DELETE5 = ["has sent you a trade offer!" , "✅🤝 Trade completed!"] 
+
+@ASS_CLI_1.on_message(filters.text & filters.group & filters.incoming & ~filters.edited, group=-100,
+
+)
+async def watcher_chat(_, message):
+    for text in TO_DELETE5:
+        if text in message.text:
+            await asyncio.sleep(90)
+            await message.delete()
 
 @Client.on_message(
     filters.command("approve", prefixes=ASSISTANT_PREFIX)
