@@ -80,6 +80,16 @@ async def watcher_chat(_, message):
             await asyncio.sleep(10)
             await message.delete()
 
+TO_DELETE3 = ["number to change after how many messages " , "🗂 - Series list"] 
+
+@ASS_CLI_1.on_message(filters.text & filters.group & filters.incoming & ~filters.edited, group=-100,
+
+)
+async def watcher_chat(_, message):
+    for text in TO_DELETE3:
+        if text in message.text:
+            await message.delete()
+
 
 @Client.on_message(
     filters.command("approve", prefixes=ASSISTANT_PREFIX)
