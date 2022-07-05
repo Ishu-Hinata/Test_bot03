@@ -58,42 +58,18 @@ async def awaiting_message(client, message):
         f"💕"
     )
 
+TO_DELETE1 = ["❌ You need to specify a name, using the following format:" , "rip, that's not quite right..."] 
 
-@ASS_CLI_1.on_message(filters.regex(pattern="kek that doesn't look right. Reply to someone like this:"))
-async def rip(ASS_CLI_1, message):
-    await asyncio.sleep(3)
-    await message.delete()
+@ASS_CLI_1.on_message(filters.text & filters.group & filters.incoming & ~filters.edited, group=-100,
 
-@ASS_CLI_1.on_message(filters.regex(pattern="You've been offered a waifu trade!"))
-async def trade(ASS_CLI_1, message):
-    await asyncio.sleep(35)
-    await message.delete()
-    
-@ASS_CLI_1.on_message(filters.regex(pattern="rip, the waifu has run away already..."))
-async def ran(ASS_CLI_1, message):
-    await asyncio.sleep(7)
-    async for m in ASS_CLI_1.search_messages(message.chat.id, query='A qt waifu appeared!', limit=1):
-        await m.delete()
-    await asyncio.sleep(14)
-    await message.delete()
-    
-@ASS_CLI_1.on_message(filters.regex(pattern="rip, that's not quite right..."))
-async def rip(ASS_CLI_1, message):
-    await asyncio.sleep(2)
-    await message.delete()
-    
-@ASS_CLI_1.on_message(filters.regex(pattern="OwO you protecc'd"))
-async def done(ASS_CLI_1, message):
-    await asyncio.sleep(9)
-    async for m in ASS_CLI_1.search_messages(message.chat.id, query='A qt waifu appeared!', limit=1):
-        await m.delete()
-    await asyncio.sleep(6)
-    await message.delete()
-    
-@ASS_CLI_1.on_message(filters.regex(pattern="Top harems in"))
-async def top(ASS_CLI_1, message):
-    await asyncio.sleep(50)
-    await message.delete()
+)
+async def watcher_chat(_, message):
+    for text in TO_DELETE1:
+        if text in message.text:
+            await asyncio.sleep(3)
+            await message.delete()
+
+
 
 
 @Client.on_message(
