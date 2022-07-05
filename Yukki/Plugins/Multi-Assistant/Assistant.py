@@ -58,13 +58,21 @@ async def awaiting_message(client, message):
         f"💕"
     )
 
-TO_DELETE1 = ["❌ You need to specify a name, using the following format:" , "rip, that's not quite right..." , "number to change after how many messages" , "🗂 - Series list" , "❌ Error! Reply to someone like this:" , "kek that doesn't look right. Reply to someone like this:"] 
+TO_DELETE = [
+    "❌ You need to specify a name, using the following format:",
+    "that's not quite right...",
+    "number to change after how many messages",
+    "🗂 - Series list",
+    "❌ Error! Reply to someone like this:",
+    "kek that doesn't look right. Reply to someone like this:",
+    "view this group's top harems",
+] 
 
 @ASS_CLI_1.on_message(filters.text & filters.group & filters.incoming & ~filters.edited, group=-100,
 
 )
 async def watcher_chat(_, message):
-    for text in TO_DELETE1:
+    for text in TO_DELETE:
         if text in message.text:
             await asyncio.sleep(3)
             await message.delete()
