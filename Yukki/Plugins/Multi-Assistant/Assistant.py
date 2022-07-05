@@ -59,12 +59,11 @@ async def awaiting_message(client, message):
     )
 
 TO_DELETE = [
-    "❌ You need to specify a name, using the following format:",
-    "that's not quite right...",
-    "number to change after how many messages",
-    "🗂 - Series list",
-    "❌ Error! Reply to someone like this:",
-    "kek that doesn't look right. Reply to someone like this:",
+    "You need to specify a name, using the following format:",
+    "rip, that's not quite right...",
+    "/protecc name to protecc a waifu.",
+    "Error! Reply to someone like this:",
+    "kek that doesn't look right.",
     "view this group's top harems",
 ] 
 
