@@ -33,6 +33,11 @@
       "value": "360",
       "required": true
     },
+    "AUTO_LEAVING_ASSISTANT": {
+      "description": "Duration Limit for Playout (In Mins).. Example: 60",
+      "value": "false",
+      "required": true
+    },
     "ASSISTANT_PREFIX": {
       "description": "Prefix for Assistant Commands.",
       "value": "/",
